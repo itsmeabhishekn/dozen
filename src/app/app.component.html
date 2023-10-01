@@ -1,7 +1,43 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-5">
-      <app-todo></app-todo>
+      <app-todo *ngIf="isLoggedIn"></app-todo>
+      <div *ngIf="!isLoggedIn">
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="login-container">
+                <div class="login-form">
+                  <h1>Welcome to Dozen</h1>
+                  <p>Your Personal Todo App</p>
+
+                  <button class="btn btn-primary google-login-button" (click)="login()">
+                    Log in with Google
+                  </button>
+
+                  <p class="or-text">OR</p>
+
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success login-button">Log in</button>
+                  </form>
+
+                  <p class="signup-link">
+                    Don't have an account? <a href="/signup">Sign up</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,58 @@
+/* Custom CSS for the Login Page */
+.login-container {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.login-form p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.google-login-button {
+    background-color: #dd4b39;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.google-login-button:hover {
+    background-color: #c23321;
+}
+
+.or-text {
+    padding-top: 10px;;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+}
+
+.login-button:hover {
+    background-color: #449d44;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #0056b3;
+}
