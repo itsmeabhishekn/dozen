@@ -8,7 +8,7 @@ export class TodoService {
   firestoreCollection : AngularFirestoreCollection;
 
   constructor(private firestore: AngularFirestore) {
-    this.firestoreCollection = firestore.collection('todos');
+    this.firestoreCollection = firestore.collection('todoItems');
    }
 
    addTodo(title: string){
